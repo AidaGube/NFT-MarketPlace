@@ -1,4 +1,56 @@
 .discover
     padding: 80px 0px
     &__items
-        padding-top: 60px
+        margin-top: 60px
+    &__item
+        width: 330px
+        background: #3B3B3B
+        border-radius: 20px
+        transition: all 0.3s ease
+        &:hover
+            transform: scale(0.95)
+        img
+            width: 330px
+        h4
+            font-weight: 600
+            font-size: 22px
+            line-height: 140%
+            text-transform: capitalize
+            color: #FFFFFF
+            margin-bottom: 10px
+        &-title
+            padding: 20px 30px 25px
+        &-subTitle
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            gap: 12px
+            margin-bottom: 25px
+            img
+                width: 24px
+            span
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 140%
+                color: #FFFFFF
+        &-price
+            display: flex
+            align-items: center
+            justify-content: space-between
+            font-family: 'Space Mono'
+            font-style: normal
+            font-weight: 400
+            span
+                font-size: 12px
+                line-height: 110%
+                color: #858584
+                margin-bottom: 10px
+            p
+                font-size: 16px
+                line-height: 140%
+                color: #FFFFFF
+            .right
+                text-align: right
+            .left
+                text-align: left
