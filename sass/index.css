@@ -421,6 +421,10 @@
 }
 .discover__items {
   margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 .discover__item {
   width: 330px;
@@ -433,6 +437,7 @@
 }
 .discover__item img {
   width: 330px;
+  border-radius: 21px 21px 0 0;
 }
 .discover__item h4 {
   font-weight: 600;
