@@ -1,2 +1,86 @@
 .topRated
-    
+    padding: 80px 0 50px
+    &__items
+        padding-top: 60px
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+    &__item
+        margin-bottom: 30px
+        transition: all 0.3s ease
+        &:hover
+            transform: scale(0.95)
+        &-avatar
+            align-items: center
+            background-color: #3B3B3B
+            border-radius: 20px
+            cursor: pointer
+            display: flex
+            flex: 1
+            flex-direction: column
+            justify-content: space-between
+            height: auto
+            padding: 20px
+            pointer-events: auto
+            width: 240px
+            img
+                height: auto
+                width: fit-content
+                margin-bottom: 20px
+        &-title
+            h3
+                align-self: stretch
+                background-color: transparent
+                letter-spacing: 0.00px
+                margin-top: -1px
+                position: relative
+                text-align: center
+                white-space: nowrap
+                font-style: normal
+                font-weight: 600
+                font-size: 22px
+                line-height: 140%
+                color: #FFFFFF
+                margin-bottom: 5px
+            p
+                flex: 1
+                margin-top: -1px
+                mix-blend-mode: normal
+                position: relative
+                white-space: nowrap
+                font-family: 'Space Mono'
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 140%
+                color: #FFFFFF
+            span
+                font-family: 'Work Sans'
+                flex: 1
+                margin-top: -1px
+                mix-blend-mode: normal
+                position: relative
+                text-align: right
+                white-space: nowrap
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 140%
+                color: #858584
+                margin-right: 10px
+        &-subtitle
+            position: relative
+            &-number
+                font-family: 'Space Mono'
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 140%
+                color: #858584
+                background-color: #2B2B2B
+                border-radius: 20px
+                padding: 4px 10px
+                position: absolute
+                top: -220px
+                left: 20px
