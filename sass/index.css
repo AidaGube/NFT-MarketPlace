@@ -494,7 +494,6 @@
 }
 
 .nft-highlight {
-  height: 640px;
   align-items: center;
   background: url(../img/gribochik.jpg);
   background-position: 50% 50%;
@@ -502,11 +501,108 @@
 }
 .nft-items {
   background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, rgb(162, 89, 255) 100%);
-  align-items: flex-end;
+  padding: 360px 195px 60px;
+}
+.nft-item {
   display: flex;
-  height: auto;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.nft-item .left button {
+  width: 198px;
+  height: 60px;
+  background: #A259FF;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 600px 195px 60px;
+  gap: 12px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #2B2B2B;
+}
+.nft-item .left button:hover {
+  transform: scale(0.95);
+}
+.nft-item .left button img {
+  width: 20px;
+}
+.nft-item .left-title {
+  cursor: pointer;
+  width: 151px;
+  height: 44px;
+  background: #3B3B3B;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-bottom: 41px;
+}
+.nft-item .left h2 {
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 110%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.nft-item .right {
+  background: rgba(59, 59, 59, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding: 30px;
+}
+.nft-item .right-subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+.nft-item .right .icons {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-top: 6px;
+}
+.nft-item .right-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  text-align: center;
+  gap: 10px;
+}
+.nft-item .right-title p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+.nft-item .right-title span {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #FFFFFF;
 }
 
 .container {
