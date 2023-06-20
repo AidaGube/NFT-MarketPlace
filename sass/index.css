@@ -416,6 +416,13 @@
   padding: 20px 30px 25px;
 }
 
+.discover {
+  padding: 80px 0px;
+}
+.discover__items {
+  padding-top: 60px;
+}
+
 .container {
   max-width: 1050px;
   margin: 0 auto;
