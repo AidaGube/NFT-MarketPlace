@@ -1,0 +1,33 @@
+@import '../helpers/_mixins'
+.wrapper
+    height: 100%
+    width: 100%
+.header
+    width: 100%
+    padding: 20px 50px
+    &__burger
+        display: none
+    &__body
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__menu
+        display: flex
+        align-items: center
+        justify-content: space-between
+        ul
+            display: flex
+            align-items: center
+            justify-content: space-between
+            li
+                a
+                    margin-right: 50px
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 140%
+                    text-align: center
+                    color: #FFFFFF
+                    &:last-child
+                        margin-right: 30px
+        .header__button
+            @include button(152px)

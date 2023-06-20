@@ -1,0 +1,80 @@
+.hero
+    padding: 80px 0px
+    &__right
+        button
+            @include button(224px)
+            margin-bottom: 30px
+    &__items
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__right
+        align-items: flex-start
+        display: flex
+        flex-direction: column
+        height: auto
+        h1
+            font-weight: 600
+            font-size: 67px
+            line-height: 110%
+            color: #FFFFFF
+            width: 500px
+            margin: 0px 0px 20px
+        p
+            font-weight: 400
+            font-size: 22px
+            line-height: 160%
+            text-transform: capitalize
+            color: #FFFFFF
+            width: 510px
+            margin-bottom: 30px
+        &-title
+            display: flex
+            align-items: center
+            gap: 60px
+            h3
+                font-weight: 700
+                font-size: 28px
+                line-height: 140%
+                display: flex
+                align-items: center
+                text-transform: capitalize
+                color: #FFFFFF
+                align-self: stretch
+            span
+                font-weight: 400
+                font-size: 23.99px
+                line-height: 160%
+                text-transform: capitalize
+                color: #FFFFFF
+    &__left
+        width: 510px
+        background: #3B3B3B
+        border-radius: 20px
+        transition: all 0.3s ease
+        &:hover
+            transform: scale(0.95)
+        img
+            width: 510px
+        h4
+            font-weight: 600
+            font-size: 22px
+            line-height: 140%
+            text-transform: capitalize
+            color: #FFFFFF
+            margin-bottom: 10px
+        &-items
+            margin: 22px 20px
+        &-title
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            gap: 12px
+            img
+                width: 24px
+            span
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 140%
+                color: #FFFFFF
