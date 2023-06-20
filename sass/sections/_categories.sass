@@ -1,0 +1,55 @@
+.categories
+    padding: 80px 0px
+    &__items
+        margin-top: 60px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        gap: 30px
+    &__item
+        background: #3B3B3B
+        border-radius: 20px
+        transition: all 0.3s ease
+        cursor: pointer
+        &:hover
+            transform: scale(0.95)
+        &-icons
+            align-self: stretch
+            height: 240px
+            min-width: 240px
+            position: relative
+            .iconsblur
+                width: 240px
+                height: 240px
+                position: absolute
+                top: 0px
+                left: 0px
+                img
+                    border-radius: 20px 20px 0px 0px
+            .iconssmall
+                display: flex
+                align-items: center
+                justify-content: center
+                gap: 10px
+                backdrop-filter: blur(15px)
+                height: 240px
+                width: 240px
+                position: absolute
+                left: 0px
+                top: 0px
+                border-radius: 20px 20px 0px 0px
+                img
+                    cursor: pointer
+                    height: 100px
+                    min-width: 100px
+                    position: relative
+        &-title
+            h5
+                font-style: normal
+                font-weight: 600
+                font-size: 22px
+                line-height: 140%
+                text-transform: capitalize
+                color: #FFFFFF
+                padding: 20px 30px 25px

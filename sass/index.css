@@ -350,6 +350,72 @@
   left: 20px;
 }
 
+.categories {
+  padding: 80px 0px;
+}
+.categories__items {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.categories__item {
+  background: #3B3B3B;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.categories__item:hover {
+  transform: scale(0.95);
+}
+.categories__item-icons {
+  align-self: stretch;
+  height: 240px;
+  min-width: 240px;
+  position: relative;
+}
+.categories__item-icons .iconsblur {
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.categories__item-icons .iconsblur img {
+  border-radius: 20px 20px 0px 0px;
+}
+.categories__item-icons .iconssmall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  height: 240px;
+  width: 240px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 20px 20px 0px 0px;
+}
+.categories__item-icons .iconssmall img {
+  cursor: pointer;
+  height: 100px;
+  min-width: 100px;
+  position: relative;
+}
+.categories__item-title h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: 20px 30px 25px;
+}
+
 .container {
   max-width: 1050px;
   margin: 0 auto;
@@ -476,4 +542,30 @@ p {
 }
 .title__button p {
   margin-bottom: 0;
+}
+.title__button .buttonSmall {
+  width: 187px;
+  height: 60px;
+  background: #A259FF;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  background: none;
+  border: 2px solid #A259FF;
+}
+.title__button .buttonSmall:hover {
+  transform: scale(0.95);
+}
+.title__button .buttonSmall img {
+  width: 20px;
 }/*# sourceMappingURL=index.css.map */
