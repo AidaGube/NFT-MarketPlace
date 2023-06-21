@@ -5,6 +5,9 @@
 .header
     width: 100%
     padding: 20px 50px
+    &__logo
+        img
+            min-width: 243px
     &__burger
         display: none
     &__body
@@ -15,19 +18,20 @@
         display: flex
         align-items: center
         justify-content: space-between
+        gap: 10px
         ul
             display: flex
             align-items: center
             justify-content: space-between
+            gap: 12px
             li
                 a
-                    margin-right: 50px
                     font-weight: 600
                     font-size: 16px
                     line-height: 140%
                     text-align: center
                     color: #FFFFFF
-                    &:last-child
-                        margin-right: 30px
+                    padding: 0px 20px
+                    
         .header__button
             @include button(152px)

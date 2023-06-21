@@ -7,6 +7,9 @@
   width: 100%;
   padding: 20px 50px;
 }
+.header__logo img {
+  min-width: 243px;
+}
 .header__burger {
   display: none;
 }
@@ -19,22 +22,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 .header__menu ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
 }
 .header__menu ul li a {
-  margin-right: 50px;
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
   text-align: center;
   color: #FFFFFF;
-}
-.header__menu ul li a:last-child {
-  margin-right: 30px;
+  padding: 0px 20px;
 }
 .header__menu .header__button {
   width: 152px;
