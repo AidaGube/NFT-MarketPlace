@@ -910,7 +910,8 @@ p {
   position: relative;
 }
 .inputWithButton input {
-  padding: 18px 214px 19px 20px;
+  width: 427px;
+  padding: 18px 0px 19px 20px;
   background: #FFFFFF;
   border-radius: 20px;
   border: none;
@@ -923,7 +924,8 @@ p {
   position: relative;
 }
 .inputWithButton .inputSmall {
-  padding: 18px 181px 19px 20px;
+  width: 397px;
+  padding: 18px 0px 19px 20px;
 }
 .inputWithButton button {
   width: 211px;
