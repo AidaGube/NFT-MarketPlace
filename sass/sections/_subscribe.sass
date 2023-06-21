@@ -1,2 +1,58 @@
 .subscribe
     padding: 40px 0px 80px
+    &__items
+        background: #3B3B3B
+        border-radius: 20px
+        padding: 60px
+    &__item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .right
+            img
+                border-radius: 22px
+                background-color: transparent
+                height: 310px
+                min-width: 425px
+        .left
+            h3
+                font-style: normal
+                font-weight: 600
+                font-size: 38px
+                line-height: 120%
+                text-transform: capitalize
+                color: #FFFFFF
+                margin-bottom: 10px
+                max-width: 425px
+            p
+                font-style: normal
+                font-weight: 400
+                font-size: 22px
+                line-height: 160%
+                text-transform: capitalize
+                color: #FFFFFF
+                margin-bottom: 40px
+                max-width: 425px
+            &-input
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                position: relative
+                input
+                    padding: 18px 214px 19px 20px
+                    background: #FFFFFF
+                    border-radius: 20px
+                    border: none
+                    outline: none
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 140%
+                    color: #2B2B2B
+                    position: relative
+
+                button
+                    @include button(211px)
+                    height: 60px
+                    position: absolute
+                    left: 218px
