@@ -605,6 +605,10 @@
   color: #FFFFFF;
 }
 
+.how-it-work {
+  padding: 40px 0px 80px 0px;
+}
+
 .container {
   max-width: 1050px;
   margin: 0 auto;
