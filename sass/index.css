@@ -682,51 +682,9 @@
   margin-bottom: 40px;
   max-width: 425px;
 }
-.subscribe__item .left-input {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
-}
-.subscribe__item .left-input input {
-  padding: 18px 214px 19px 20px;
-  background: #FFFFFF;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: #2B2B2B;
-  position: relative;
-}
-.subscribe__item .left-input button {
-  width: 211px;
-  height: 60px;
-  background: #A259FF;
-  border-radius: 20px;
-  outline: none;
-  border: none;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 140%;
-  text-align: center;
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  transition: all 0.3s ease;
-  height: 60px;
-  position: absolute;
-  left: 218px;
-}
-.subscribe__item .left-input button:hover {
-  transform: scale(0.95);
-}
-.subscribe__item .left-input button img {
-  width: 20px;
+
+.footer {
+  padding: 48px 0px 40px;
 }
 
 .container {
@@ -880,5 +838,82 @@ p {
   transform: scale(0.95);
 }
 .title__button .buttonSmall img {
+  width: 20px;
+}
+
+.inputWithButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.inputWithButton input {
+  padding: 18px 214px 19px 20px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #2B2B2B;
+  position: relative;
+}
+.inputWithButton .inputSmall {
+  padding: 18px 181px 19px 20px;
+}
+.inputWithButton button {
+  width: 211px;
+  height: 60px;
+  background: #A259FF;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  height: 60px;
+  position: absolute;
+  left: 218px;
+}
+.inputWithButton button:hover {
+  transform: scale(0.95);
+}
+.inputWithButton button img {
+  width: 20px;
+}
+.inputWithButton .buttonSmall {
+  width: 179px;
+  height: 60px;
+  background: #A259FF;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  height: 60px;
+  position: absolute;
+  left: 218px;
+}
+.inputWithButton .buttonSmall:hover {
+  transform: scale(0.95);
+}
+.inputWithButton .buttonSmall img {
   width: 20px;
 }/*# sourceMappingURL=index.css.map */
