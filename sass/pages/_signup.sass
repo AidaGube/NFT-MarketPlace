@@ -1,0 +1,64 @@
+.account
+    display: flex
+    align-items: center
+    gap: 60px
+    align-self: stretch
+    height: auto
+    position: relative
+    &__img
+        align-self: stretch
+        flex: 1
+        height: 691px
+        min-width: 610px
+        object-fit: cover
+        position: relative
+    &__list
+        display: flex
+        align-items: flex-start
+        flex-direction: column
+        padding: 100px 0px
+        gap: 40px
+        position: relative
+        flex: 1
+    &__title
+        width: 460px
+        h2
+            font-weight: 600
+            font-size: 51px
+            line-height: 110%
+            color: #FFFFFF
+            margin-bottom: 20px
+        p
+            font-weight: 400
+            font-size: 22px
+            line-height: 160%
+            color: #FFFFFF
+    &__forms
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 15px
+        button
+            @include smallButton(330px)
+    &__form
+        align-items: center
+        border: 1px solid #858584
+        background: #FFFFFF
+        border-radius: 20px
+        display: flex
+        gap: 12px
+        height: 46px
+        padding: 12px 20px
+        position: relative
+        input
+            border: none
+            outline: none
+            flex: 1
+            height: 22px
+            letter-spacing: 0.00px
+            line-height: 22.4px
+            min-width: 258px
+            padding: 0
+            position: relative
+            resize: none
+            text-align: left
