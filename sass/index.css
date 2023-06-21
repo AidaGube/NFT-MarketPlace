@@ -643,6 +643,10 @@
   color: #FFFFFF;
 }
 
+.subscribe {
+  padding: 40px 0px 80px;
+}
+
 .container {
   max-width: 1050px;
   margin: 0 auto;
