@@ -1,43 +1,156 @@
-@media (min-width: 532px) and (max-width: 997px)
+@import './helpers/variables'
+@import './helpers/mixins'
+
+@media screen and (max-width:1120px)
+    .container
+        padding: 0px 40px
+    .hero
+        &__items
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+        &__right
+            align-items: flex-start
+            display: flex
+            flex-direction: column
+            height: auto
+            width: 330px
+            h1
+                font-size: 38px
+                width: 330px
+            p
+                font-size: 16px
+                line-height: 140%
+                color: #FFFFFF
+                width: 330px
+                margin: 0 0 20px
+            &-title
+                gap: 30px
+                h3
+                    font-size: 22px
+                span
+                    font-size: 16px
+        &__left
+            width: 330px
+            img
+                width: 330px
+            &-items
+                margin: 22px 20px
+            &-title
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                gap: 12px
+                img
+                    width: 24px
+                span
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 140%
+                    color: #FFFFFF
+    .title
+        h2
+            font-size: 28px
+        p
+            font-size: 16px
+    .title__button
+        h2
+            font-size: 28px
+        p
+            font-size: 16px
+    .trending
+        padding: 40px 0px
+        &__items
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+            gap: 15px
+            p
+                font-size: 22px
+        &__item
+            &:last-child
+                display: none
+    .topRated
+        &__items
+            gap: 10px
+
+@media (min-width: 532px) and (max-width: 974px)
+    .topRated
+        &__items
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+            gap: 10px
+        &__item
+            &:nth-last-child(-n+6)
+                display: none
+            &-avatar
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-wrap: nowrap
+                flex-direction: row
+                flex: 1
+                width: 330px
+                img
+                    width: 60px
+                    margin: 0 auto
+            &-title
+                margin-left: 20px
+                h3
+                    margin: 0
+                    text-align: start
+                p
+                    font-size: 12px
+            &-subtitle
+                position: relative
+                &-number
+                    position: absolute
+                    top: -99px
+                    left: 17px
+    .container
+        padding: 0px 40px
     .header
+        &__body
+            display: flex
+            justify-content: space-between
+            align-items: center
         &__logo
             img
                 min-width: 180px
-        &__body
-            overflow: auto
-            display: flex
-            align-items: center
-            justify-content: space-between
         &__menu
+            z-index: 2
             position: fixed
-            top: 0
             left: 0
             width: 100%
-            height: 100%
             transform: translateX(-100%)
             background-color: #333333
             display: flex
             flex-direction: column
             align-items: center
             justify-content: space-evenly
-            padding: 180px 10px 20px 40px
+            padding: 120px
+            overflow: hidden
             ul
                 display: block
                 li
                     margin: 0 0 50px 0
             button
                 display: block
-                margin-top: -80px
+                margin-top: -100px
         ._active
             transform: translateX(0)
         &__burger
             display: block
-            position: fixed
+            position: relative
             width: 30px
             height: 30px
             z-index: 4
             top: 0
-            right: 58px
+            right: 0
             margin: 20px 0
             span
                 background-color: #FFFFFF
@@ -80,6 +193,137 @@
                     bottom: 50%
                     transform: rotate(45deg) translate(0px, 50%)
 
+@media screen and (max-width:780px)
+    .container
+        padding: 0px 40px
+    .hero
+        &__items
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            justify-content: center
+            flex-direction: column-reverse
+            .active
+                display: none
+            .activeButton
+                display: block
+                margin: 40px 0 0
+
+                button
+                    @include button(317px)
+                    margin-bottom: 40px
+
+        &__right
+            align-items: flex-start
+            display: flex
+            flex-direction: column
+            height: auto
+            width: 330px
+            order: 2
+            h1
+                font-size: 28px
+                width: 315px
+            p
+                font-size: 16px
+                line-height: 140%
+                color: #FFFFFF
+                width: 330px
+                margin: 0 0 20px
+            &-title
+                display: flex
+                align-items: center
+                justify-content: space-between
+                gap: 30px
+                h3
+                    font-size: 22px
+                span
+                    font-size: 16px
+            .active
+                order: 1
+        &__left
+            width: 330px
+            img
+                width: 330px
+            &-items
+                margin: 22px 20px
+            &-title
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                gap: 12px
+                img
+                    width: 24px
+                span
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 140%
+                    color: #FFFFFF
+    .title
+        margin: 0 auto
+        width: 330px
+    .title__button
+        display: flex
+        align-items: center
+        justify-content: center
+        button
+            display: none
+        .active
+            display: block
+            width: 330px
+            margin-top: 40px
+    .trending
+        &__items
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            p
+                font-size: 22px
+        &__item
+            &:nth-last-child(-n+2)
+                display: none
+    .topRated
+        padding: 40px 0px
+        &__items
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            gap: 20px
+        &__item
+            margin-bottom: 0px
+            &:nth-last-child(-n+7)
+                display: none
+            &-avatar
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-wrap: nowrap
+                flex-direction: row
+                flex: 1
+                width: 330px
+                img
+                    width: 60px
+                    margin: 0 auto
+            &-title
+                margin-left: 20px
+                h3
+                    margin: 0
+                    text-align: start
+                p
+                    font-size: 12px
+            &-subtitle
+                position: relative
+                &-number
+                    position: absolute
+                    top: -95px
+                    left: 35px
+
+
+    
 @media screen and (max-width:530px)
     .header
         padding: 15px 30px
@@ -87,16 +331,14 @@
             img
                 min-width: 130px
         &__body
-            overflow: auto
             display: flex
             align-items: center
             justify-content: space-between
         &__menu
+            z-index: 2
             position: fixed
-            top: 0
             left: 0
             width: 100%
-            height: 100%
             transform: translateX(-100%)
             background-color: #333333
             display: flex
@@ -104,23 +346,24 @@
             align-items: center
             justify-content: space-evenly
             padding: 10px
+            overflow: hidden
             ul
                 display: block
                 li
                     margin: 0 0 50px 0
             button
                 display: block
-                margin-top: -80px
+                margin-top: -170px
         ._active
             transform: translateX(0)
         &__burger
             display: block
-            position: fixed
+            position: relative
             width: 30px
             height: 30px
             z-index: 4
             top: 0
-            right: 33px
+            right: 0
             margin: 20px 0
             span
                 background-color: #FFFFFF
@@ -162,4 +405,108 @@
                 &::after
                     bottom: 50%
                     transform: rotate(45deg) translate(0px, 50%)
- 
+    .trending
+        &__item
+            img
+                width: 315px
+            &-images
+                img
+                    width: 90px
+                    height: 90px
+            &-title
+                img
+                    width: 24px
+                    height: 24px
+            span
+                border-radius: 20px
+                padding: 32.2px 15px
+                font-size: 16px
+
+@media screen and (max-width:440px)
+    .container
+        padding: 0px 30px
+    .header
+        &__logo
+            img
+                max-width: 190px
+                padding-top: 5px
+        &__body
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__menu
+            z-index: 2
+            position: fixed
+            left: 0
+            width: 100%
+            transform: translateX(-100%)
+            background-color: #333333
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: flex-start
+            padding: 10px
+            overflow: hidden
+
+            ul
+                margin: 120px 20px
+                li
+                    margin: 0 0 50px 0
+            button
+                display: block
+                margin: -140px 40px 0px
+        ._active
+            transform: translateX(0)
+        &__burger
+            display: block
+            position: relative
+            width: 30px
+            height: 30px
+            z-index: 4
+            top: 0
+            right: 0
+            margin: 20px 0
+            span
+                background-color: #FFFFFF
+                position: absolute
+                width: 100%
+                height: 2.5px
+                left: 0
+                top: 15px
+
+            &::before,
+            &::after
+                content: " "
+                background-color: #FFFFFF
+                position: absolute
+                width: 100%
+                height: 2px
+                left: 0
+                transition: all 0.3s
+            &::before
+                top: 0
+
+            &::after
+                bottom: 0
+
+            span
+                top: 50%
+                transform: scale(1) translate(0px, -50%)
+
+            &._active
+                margin-right: 8px
+                margin-top: 20px
+                transform: translateX(0)
+                span
+                    transform: scale(0) translate(0px, -50%)
+                &::before
+                    top: 50%
+                    transform: rotate(-45deg) translate(0px, -50%)
+
+                &::after
+                    bottom: 50%
+                    transform: rotate(45deg) translate(0px, 50%)
+
+@media screen and (max-width:381px)
+    .container
+        padding: 0px 0px

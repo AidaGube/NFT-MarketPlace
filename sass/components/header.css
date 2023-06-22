@@ -7,16 +7,16 @@
   width: 100%;
   padding: 20px 50px;
 }
+.header__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header__logo img {
   min-width: 243px;
 }
 .header__burger {
   display: none;
-}
-.header__body {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .header__menu {
   display: flex;
