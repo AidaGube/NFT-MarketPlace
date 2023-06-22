@@ -11,15 +11,18 @@
         display: flex
         align-items: flex-end
         justify-content: space-between
+        .active
+                display: none
         .left
-            button
-                @include button(198px)
-                background-color: #fff
-                font-weight: 600
-                font-size: 16px
-                line-height: 140%
-                text-align: center
-                color: #2B2B2B
+            .non
+                button
+                    @include button(198px)
+                    background-color: #fff
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 140%
+                    text-align: center
+                    color: #2B2B2B
             &-title
                 cursor: pointer
                 width: 151px
