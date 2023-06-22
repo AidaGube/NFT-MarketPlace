@@ -848,6 +848,51 @@
   text-align: left;
 }
 
+@media screen and (max-width: 1185px) {
+  .account {
+    gap: 40px;
+    height: auto;
+    padding: 0px 50px 0px 0px;
+  }
+  .account__img {
+    min-width: 397px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .account {
+    padding: 0px 50px 0px 0px;
+  }
+  .account__img {
+    min-width: 380px;
+  }
+  .account__title {
+    width: 325px;
+  }
+  .account__title h2 {
+    font-size: 38px;
+    line-height: 120%;
+  }
+  .account__title p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+@media screen and (max-width: 772px) {
+  .account {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px 40px;
+  }
+  .account__img {
+    min-width: 375px;
+    max-height: 232px;
+  }
+  .account__list {
+    padding: 0px;
+  }
+}
 .wallet {
   display: flex;
   align-items: center;
