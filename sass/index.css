@@ -1022,6 +1022,98 @@
     padding: 0px;
   }
 }
+.marketplace {
+  padding: 80px 0;
+}
+.marketplace__input input {
+  border-radius: 20px;
+  border: 1px solid #3B3B3B;
+  background: url("../img/home/search.png") no-repeat;
+  background-position: right 20px center;
+  width: 100%;
+  outline: none;
+  padding: 12px 20px;
+  height: 60px;
+  color: #858584;
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 80px;
+}
+.marketplace__sorts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 10px;
+}
+.marketplace__sort {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 2px solid #3B3B3B;
+  flex: 1;
+  height: 70px;
+  padding: 0px 30px;
+  position: relative;
+  justify-content: center;
+}
+.marketplace__sort:last-child {
+  border: none;
+}
+.marketplace__sort h4 {
+  color: #FFF;
+  text-align: center;
+  font-size: 22px;
+  font-family: Work Sans;
+  font-weight: 600;
+  line-height: 140%;
+  margin: 0;
+}
+.marketplace__sort span {
+  color: #FFF;
+  font-size: 16px;
+  font-family: Space Mono;
+  line-height: 140%;
+  border-radius: 20px;
+  background: #858584;
+  padding: 5px 10px;
+}
+.marketplace__items {
+  gap: 30px;
+}
+
+@media screen and (max-width: 437px) {
+  .marketplace__item:nth-last-child(-n+4) {
+    display: none;
+  }
+  .marketplace__sorts {
+    padding: 0px 30px;
+  }
+  .marketplace__sort h4 {
+    font-size: 16px;
+  }
+  .marketplace__sort span {
+    display: none;
+  }
+  .marketplace__input {
+    padding: 0px 30px;
+  }
+}
+@media (min-width: 440px) and (max-width: 1120px) {
+  .marketplace__item:nth-last-child(-n+4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 772px) {
+  .marketplace__item:nth-last-child(-n+4) {
+    display: none;
+  }
+  .marketplace__sort h4 {
+    font-size: 16px;
+  }
+  .marketplace__sort span {
+    display: none;
+  }
+}
 @media screen and (max-width: 1185px) {
   .nft-item {
     display: flex;
@@ -1481,6 +1573,15 @@
   }
   .subscribe__item .left .inputWithButton button img {
     width: 20px;
+  }
+  .titles {
+    padding: 0px 30px;
+  }
+  .titles h2 {
+    font-size: 28px;
+  }
+  .titles p {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 822px) {
@@ -2493,4 +2594,23 @@ p {
 }
 .inputWithButton .buttonSmall img {
   width: 20px;
+}
+
+.titles h2 {
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.titles p {
+  font-size: 22px;
+  color: white;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #3B3B3B;
 }/*# sourceMappingURL=index.css.map */

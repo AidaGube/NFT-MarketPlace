@@ -458,6 +458,15 @@
   .subscribe__item .left .inputWithButton button img {
     width: 20px;
   }
+  .titles {
+    padding: 0px 30px;
+  }
+  .titles h2 {
+    font-size: 28px;
+  }
+  .titles p {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 822px) {
   .subscribe__item {

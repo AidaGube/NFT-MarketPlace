@@ -1,0 +1,83 @@
+.marketplace
+    padding: 80px 0
+    &__input
+        input
+            border-radius: 20px
+            border: 1px solid #3B3B3B
+            background: url("../img/home/search.png") no-repeat
+            background-position: right 20px center
+            width: 100%
+            outline: none
+            padding: 12px 20px
+            height: 60px
+            color: #858584
+            font-size: 16px
+            line-height: 140%
+            margin-bottom: 80px
+    &__sorts
+        display: flex
+        align-items: flex-start
+        justify-content: space-around
+        gap: 10px
+    &__sort
+        display: flex
+        align-items: center
+        gap: 16px
+        border-bottom: 2px solid #3B3B3B
+        flex: 1
+        height: 70px
+        padding: 0px 30px
+        position: relative
+        justify-content: center
+        &:last-child
+            border: none
+        h4
+            color: #FFF
+            text-align: center
+            font-size: 22px
+            font-family: Work Sans
+            font-weight: 600
+            line-height: 140%
+            margin: 0
+        span
+            color: #FFF
+            font-size: 16px
+            font-family: Space Mono
+            line-height: 140%
+            border-radius: 20px
+            background: #858584
+            padding: 5px 10px
+    &__items
+        gap: 30px
+
+@media screen and (max-width:437px)
+    .marketplace
+        &__item
+            &:nth-last-child(-n+4)
+                display: none
+        &__sorts
+            padding: 0px 30px
+        &__sort
+            h4
+                font-size: 16px
+            span
+                display: none
+        &__input
+            padding: 0px 30px
+        
+@media (min-width:440px) and (max-width:1120px)
+    .marketplace
+        &__item
+            &:nth-last-child(-n+4)
+                display: none
+
+@media screen and (max-width:772px)
+    .marketplace
+        &__item
+            &:nth-last-child(-n+4)
+                display: none
+        &__sort
+            h4
+                font-size: 16px
+            span
+                display: none
