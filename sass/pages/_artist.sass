@@ -1,0 +1,111 @@
+.artist
+    .fon
+        background-image: url('../img/artist/fonimg.svg')
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        height: 320px
+        position: relative
+    &__image
+        position: absolute
+        top: 350px
+        border: 1px solid black
+        border-radius: 20px
+        height: 120px
+    &__info
+        margin: 80px 0px 40px
+        display: flex
+        align-items: flex-start
+        flex-direction: column
+        &-subtitle
+            display: flex
+            align-items: flex-start
+            gap: 30px
+            flex-direction: column
+            p
+                margin: 0
+                font-size: 22px
+                line-height: 160%
+                text-transform: capitalize
+                color: #fff
+            div
+                color: #858584
+                font-size: 22px
+                font-family: Space Mono
+                font-weight: 700
+                line-height: 160%
+                text-transform: capitalize
+        &-title
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            width: 100%
+        &-right
+            h2
+                font-size: 51px
+                font-weight: 600
+                line-height: 110%
+                color: #fff
+                margin: 0
+                margin-bottom: 30px
+        &-left
+            display: flex
+            align-items: center
+            gap: 20px
+            .buttonColor
+                @include button(186px)
+            .buttonNonecolor
+                @include button(145px)
+                border: 2px solid #A259FF
+                background: none
+    &-sort
+        border-bottom: 2px solid #858584
+        &:nth-last-child(-n+2)
+            border: none
+    &__list
+        padding: 40px 0px 80px
+        background-color: #3B3B3B
+        max-width: 100%
+        border-bottom: 2px solid #2B2B2B
+    &-bgc
+        background: #2B2B2B
+
+@media screen and (max-width:439px)
+    .artist
+        &__info
+            padding: 0px 30px
+            &-left
+                display: flex
+                gap: 20px
+                flex-direction: column
+                .buttonColor
+                    @include button(300px)
+                .buttonNonecolor
+                    @include button(300px)
+                    border: 2px solid #A259FF
+                    background: none
+            &-subtitle
+                p
+                    font-size: 16px
+        &__image
+            padding: 0px 30px
+        &-sort
+            padding: 0px 15px
+
+@media screen and (max-width:777px)
+    .artist
+        .fon
+            height: 280px
+        &__image
+            top: 320px
+            height: auto
+            border: none
+        &__info
+            &-title
+                flex-direction: column
+                justify-content: flex-start
+            &-right
+                h2
+                    font-size: 38px
+            &-left
+                margin-bottom: 30px
