@@ -1138,6 +1138,12 @@
   color: #fff;
   border-bottom: 2px solid #858584;
 }
+.rankings__sortmobiles {
+  display: none;
+}
+.rankings__sortmobile {
+  display: none;
+}
 .rankings__tables {
   border-radius: 20px;
   border: 1px solid #3B3B3B;
@@ -1243,6 +1249,93 @@
   color: #00AC4F;
 }
 
+@media screen and (max-width: 772px) {
+  .rankings__sorts {
+    display: none;
+  }
+  .rankings__sortmobiles {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0 40px;
+  }
+  .rankings__sortmobile {
+    display: block;
+    width: 25%;
+    color: #858584;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+    height: 60px;
+    cursor: pointer;
+  }
+  .rankings__sortmobile:first-child {
+    color: #fff;
+    border-bottom: 2px solid #858584;
+  }
+  .rankings__table .rank {
+    gap: 12px;
+    font-size: 12px;
+  }
+  .rankings__table .stats div {
+    width: 100px;
+  }
+  .rankings__table .stats div:nth-child(1) {
+    display: none;
+  }
+  .rankings__item-avatar {
+    gap: 12px;
+  }
+  .rankings__item-avatar h3 {
+    font-size: 16px;
+  }
+  .rankings__item-avatar span {
+    font-size: 12px;
+    background: none;
+  }
+  .rankings__item-avatar img {
+    width: 24px;
+    height: 24px;
+  }
+  .rankings__item-rang div {
+    width: 100px;
+    font-size: 12px;
+  }
+  .rankings__item-rang div:nth-child(1) {
+    display: none;
+  }
+}
+@media screen and (max-width: 440px) {
+  .rankings .titles {
+    padding: 0;
+  }
+  .rankings .container {
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 982px) {
+  .rankings__table .stats div:nth-child(2) {
+    display: none;
+  }
+  .rankings__item-avatar span {
+    background: none;
+  }
+  .rankings__item-avatar img {
+    width: 24px;
+    height: 24px;
+  }
+  .rankings__item-rang div:nth-child(2) {
+    display: none;
+  }
+}
+@media (min-width: 440px) and (max-width: 1120px) {
+  .rankings__item-avatar {
+    max-width: 350px;
+  }
+}
 @media screen and (max-width: 1185px) {
   .nft-item {
     display: flex;
