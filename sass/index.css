@@ -1114,6 +1114,135 @@
     display: none;
   }
 }
+.rankings {
+  padding: 80px 0px;
+}
+.rankings__sorts {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 0 40px;
+}
+.rankings__sort {
+  width: 25%;
+  color: #858584;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+  height: 60px;
+  cursor: pointer;
+}
+.rankings__sort:first-child {
+  color: #fff;
+  border-bottom: 2px solid #858584;
+}
+.rankings__tables {
+  border-radius: 20px;
+  border: 1px solid #3B3B3B;
+  padding: 10px 0px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.rankings__table {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.rankings__table .rank {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 430px;
+}
+.rankings__table .rank div {
+  color: #858584;
+  text-align: center;
+  font-size: 16px;
+  font-family: Space Mono;
+  line-height: 140%;
+  width: 30px;
+}
+.rankings__table .rank p {
+  color: #858584;
+  text-align: center;
+  font-size: 16px;
+  line-height: 140%;
+}
+.rankings__table .stats {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: left;
+  gap: 20px;
+}
+.rankings__table .stats div {
+  color: #858584;
+  font-size: 16px;
+  line-height: 140%;
+  width: 160px;
+}
+.rankings__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rankings__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: #3B3B3B;
+  padding: 10px 20px;
+}
+.rankings__item-avatar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  max-width: 430px;
+}
+.rankings__item-avatar h3 {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+.rankings__item-avatar img {
+  width: 60px;
+  height: 60px;
+}
+.rankings__item-avatar span {
+  color: #858584;
+  text-align: center;
+  font-size: 16px;
+  font-family: Space Mono;
+  line-height: 140%;
+  border-radius: 20px;
+  background: #2B2B2B;
+  padding: 4px 10px;
+}
+.rankings__item-rang {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  text-align: left;
+}
+.rankings__item-rang div {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Space Mono;
+  line-height: 140%;
+  width: 160px;
+}
+.rankings__item-rang div:first-child {
+  color: #00AC4F;
+}
+
 @media screen and (max-width: 1185px) {
   .nft-item {
     display: flex;
