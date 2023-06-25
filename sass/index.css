@@ -1291,6 +1291,8 @@
   }
   .rankings__item-avatar h3 {
     font-size: 16px;
+    font-weight: normal;
+    padding-right: 5px;
   }
   .rankings__item-avatar span {
     font-size: 12px;
@@ -1308,7 +1310,13 @@
     display: none;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 444px) {
+  .rankings__table .stats div {
+    max-width: 60px;
+  }
+  .rankings__item-rang div {
+    max-width: 60px;
+  }
   .rankings .titles {
     padding: 0;
   }

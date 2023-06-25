@@ -151,6 +151,8 @@
                 gap: 12px
                 h3
                     font-size: 16px
+                    font-weight: normal
+                    padding-right: 5px
                 span
                     font-size: 12px
                     background: none
@@ -164,8 +166,16 @@
                     &:nth-child(1)
                         display: none
 
-@media screen and (max-width:440px)
+@media screen and (max-width:444px)
     .rankings
+        &__table
+            .stats
+                div
+                    max-width: 60px
+        &__item
+            &-rang
+                div
+                    max-width: 60px
         .titles
             padding: 0
         .container
