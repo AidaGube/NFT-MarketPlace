@@ -1487,6 +1487,16 @@
 @media screen and (max-width: 439px) {
   .artist__info {
     padding: 0px 30px;
+    display: flex;
+    align-items: center;
+  }
+  .artist__info-title {
+    display: flex;
+    align-items: center;
+  }
+  .artist__info-title h2 {
+    width: 300px;
+    margin-left: 10px;
   }
   .artist__info-left {
     display: flex;
@@ -1549,6 +1559,10 @@
   .artist__image {
     padding: 0px 30px;
     left: 25%;
+    right: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
   .artist-sort {
     padding: 0px 15px;
