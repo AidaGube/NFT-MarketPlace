@@ -861,7 +861,7 @@
     width: 20px;
   }
 }
-@media screen and (max-width: 772px) {
+@media screen and (max-width: 777px) {
   .hero__items {
     display: flex;
     align-items: center;

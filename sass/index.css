@@ -1602,7 +1602,8 @@
   line-height: 160%;
   text-transform: capitalize;
   color: #fff;
-  width: 605px;
+  max-width: 605px;
+  font-weight: normal;
 }
 .nfts__info-left div {
   color: #858584;
@@ -1727,95 +1728,193 @@
   line-height: 140%;
   text-transform: uppercase;
 }
+.nfts__button {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nfts__button h3 {
+  color: #FFF;
+  font-size: 38px;
+  font-family: Work Sans;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+  margin: 0;
+}
+.nfts__button button {
+  width: 267px;
+  height: 60px;
+  background: #A259FF;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  height: 60px;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-family: Work Sans;
+  font-weight: 600;
+  line-height: 140%;
+  border: 2px solid #A259FF;
+  background: none;
+}
+.nfts__button button:hover {
+  transform: scale(0.95);
+}
+.nfts__button button img {
+  width: 20px;
+}
 
-@media screen and (max-width: 439px) {
-  .artist__info {
-    padding: 0px 30px;
+@media screen and (max-width: 460px) {
+  .nfts__info-left {
+    gap: 25px;
   }
-  .artist__info-left {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-  }
-  .artist__info-left .buttonColor {
-    width: 300px;
-    height: 60px;
-    background: #A259FF;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    transition: all 0.3s ease;
-  }
-  .artist__info-left .buttonColor:hover {
-    transform: scale(0.95);
-  }
-  .artist__info-left .buttonColor img {
-    width: 20px;
-  }
-  .artist__info-left .buttonNonecolor {
-    width: 300px;
-    height: 60px;
-    background: #A259FF;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    transition: all 0.3s ease;
-    border: 2px solid #A259FF;
-    background: none;
-  }
-  .artist__info-left .buttonNonecolor:hover {
-    transform: scale(0.95);
-  }
-  .artist__info-left .buttonNonecolor img {
-    width: 20px;
-  }
-  .artist__info-subtitle p {
+  .nfts__info-left p {
     font-size: 16px;
   }
-  .artist__image {
-    padding: 0px 30px;
-    left: 25%;
+  .nfts__info-left div {
+    font-size: 16px;
   }
-  .artist-sort {
-    padding: 0px 15px;
+  .nfts__info-title h2 {
+    font-size: 28px;
+  }
+  .nfts .tags__items {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .nfts__button h3 {
+    font-size: 25px;
   }
 }
-@media screen and (max-width: 777px) {
-  .artist .fon {
+@media screen and (max-width: 810px) {
+  .nfts .fon {
     height: 280px;
   }
-  .artist__image {
-    top: 320px;
-    height: auto;
-    border: none;
+  .nfts__info {
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
   }
-  .artist__info-title {
+  .nfts__info-left {
+    padding: 0px 30px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nfts__info-right {
+    display: none;
+  }
+  .nfts__info-timer {
+    display: block;
+    background: rgba(59, 59, 59, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 30px;
+  }
+  .nfts__info-timer button {
+    width: 235px;
+    height: 60px;
+    background: #A259FF;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+  }
+  .nfts__info-timer button:hover {
+    transform: scale(0.95);
+  }
+  .nfts__info-timer button img {
+    width: 20px;
+  }
+  .nfts__info-timer .right-subtitle {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 110%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  .nfts__info-timer .icons {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-top: 6px;
+  }
+  .nfts__info-timer .right-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-align: center;
+    gap: 10px;
+  }
+  .nfts__info-timer .right-title p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #FFFFFF;
+  }
+  .nfts__info-timer .right-title span {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    color: #FFFFFF;
+  }
+  .nfts .tags__items {
     flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
   }
-  .artist__info-right h2 {
+  .nfts__button {
+    padding: 0px 30px;
+  }
+  .nfts__button button {
+    display: none;
+  }
+}
+@media (min-width: 460px) and (max-width: 980px) {
+  .nfts__info-left {
+    gap: 25px;
+  }
+  .nfts__info-left p {
+    font-size: 16px;
+  }
+  .nfts__info-left div {
+    font-size: 16px;
+  }
+  .nfts__info-title h2 {
     font-size: 38px;
   }
-  .artist__info-left {
-    margin-bottom: 30px;
+  .nfts .tags__items {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .nfts__button h3 {
+    font-size: 28px;
   }
 }
 @media screen and (max-width: 1185px) {
@@ -2681,7 +2780,7 @@
     width: 20px;
   }
 }
-@media screen and (max-width: 772px) {
+@media screen and (max-width: 777px) {
   .hero__items {
     display: flex;
     align-items: center;

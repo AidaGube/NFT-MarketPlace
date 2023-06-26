@@ -22,7 +22,8 @@
                 line-height: 160%
                 text-transform: capitalize
                 color: #fff
-                width: 605px
+                max-width: 605px
+                font-weight: normal
             div
                 color: #858584
                 font-size: 22px
@@ -111,44 +112,131 @@
         font-weight: 600
         line-height: 140%
         text-transform: uppercase
+    &__button
+        padding-top: 40px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        h3
+            color: #FFF
+            font-size: 38px
+            font-family: Work Sans
+            font-weight: 600
+            line-height: 140%
+            text-transform: capitalize
+            margin: 0
+        button
+            @include button(267px)
+            height: 60px
+            color: #FFF
+            text-align: center
+            font-size: 16px
+            font-family: Work Sans
+            font-weight: 600
+            line-height: 140%
+            border: 2px solid #A259FF
+            background: none
 
-@media screen and (max-width:439px)
-    .artist
+@media screen and (max-width:460px)
+    .nfts
         &__info
-            padding: 0px 30px
             &-left
-                display: flex
-                gap: 20px
-                flex-direction: column
-                .buttonColor
-                    @include button(300px)
-                .buttonNonecolor
-                    @include button(300px)
-                    border: 2px solid #A259FF
-                    background: none
-            &-subtitle
+                gap: 25px
                 p
                     font-size: 16px
-        &__image
-            padding: 0px 30px
-            left: 25%
-        &-sort
-            padding: 0px 15px
+                div
+                    font-size: 16px
+            &-title
+                h2
+                    font-size: 28px
+        .tags__items
+            flex-wrap: wrap
+            align-items: flex-start
+        &__button
+            h3
+                font-size: 25px
 
-@media screen and (max-width:777px)
-    .artist
+@media screen and (max-width:810px)
+    .nfts
         .fon
             height: 280px
-        &__image
-            top: 320px
-            height: auto
-            border: none
         &__info
-            &-title
-                flex-direction: column
-                justify-content: flex-start
+            margin: 40px 0px
+            display: flex
+            align-items: center
+            &-left
+                padding: 0px 30px
+                width: 100%
+                margin: 0 auto
             &-right
+                display: none
+            &-timer
+                display: block
+                background: rgba(59, 59, 59, 0.5)
+                backdrop-filter: blur(5px)
+                border-radius: 20px
+                padding: 30px
+                button
+                    @include button(235px)
+                    margin-top: 30px
+                .right-subtitle
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 110%
+                    color: #FFFFFF
+                    margin-bottom: 20px
+                .icons
+                    font-family: 'Space Mono'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 28px
+                    line-height: 140%
+                    color: #FFFFFF
+                    margin-top: 6px
+                .right-title
+                    display: flex
+                    align-items: flex-start
+                    justify-content: space-around
+                    text-align: center
+                    gap: 10px
+                    p
+                        font-weight: 400
+                        font-size: 12px
+                        line-height: 110%
+                        color: #FFFFFF
+                    span
+                        font-family: 'Space Mono'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 38px
+                        color: #FFFFFF
+        .tags__items
+            flex-direction: column
+            align-items: flex-start
+            justify-content: flex-start
+        &__button
+            padding: 0px 30px
+            button
+                display: none
+
+@media (min-width:460px) and (max-width:980px)
+    .nfts
+        &__info
+            &-left
+                gap: 25px
+                // width: 25%
+                p
+                    font-size: 16px
+                    // width: 365px
+                div
+                    font-size: 16px
+            &-title
                 h2
                     font-size: 38px
-            &-left
-                margin-bottom: 30px
+        .tags__items
+            flex-wrap: wrap
+            align-items: flex-start
+        &__button
+            h3
+                font-size: 28px
+            button
