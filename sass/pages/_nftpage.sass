@@ -1,0 +1,154 @@
+.nfts
+    padding: 0px 0px 80px
+    .fon
+        background-image: url('../img/home/nft.png')
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        height: 450px
+    &__info
+        margin: 80px 0px 40px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        &-left
+            display: flex
+            align-items: flex-start
+            gap: 30px
+            flex-direction: column
+            p
+                margin: 0
+                font-size: 22px
+                line-height: 160%
+                text-transform: capitalize
+                color: #fff
+                width: 605px
+            div
+                color: #858584
+                font-size: 22px
+                font-family: Space Mono
+                font-weight: 700
+                line-height: 160%
+                text-transform: capitalize
+        &-title
+            h2
+                font-size: 51px
+                font-weight: 600
+                line-height: 110%
+                color: #fff
+                margin: 0
+                margin-bottom: 30px
+            p
+                color: #858584
+                font-size: 22px
+                font-weight: normal
+                line-height: 140%
+                text-transform: capitalize
+                font-family: Work Sans
+        &-right
+            background: rgba(59, 59, 59, 0.5)
+            backdrop-filter: blur(5px)
+            border-radius: 20px
+            padding: 30px
+            button
+                @include button(235px)
+                margin-top: 30px
+            .right-subtitle
+                font-weight: 400
+                font-size: 12px
+                line-height: 110%
+                color: #FFFFFF
+            .icons
+                font-family: 'Space Mono'
+                font-style: normal
+                font-weight: 700
+                font-size: 28px
+                line-height: 140%
+                color: #FFFFFF
+                margin-top: 6px
+            .right-title
+                display: flex
+                align-items: flex-start
+                justify-content: space-around
+                text-align: center
+                gap: 10px
+                p
+                    font-weight: 400
+                    font-size: 12px
+                    line-height: 110%
+                    color: #FFFFFF
+                span
+                    font-family: 'Space Mono'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 38px
+                    color: #FFFFFF
+        &-timer
+            display: none
+    &__icons
+    &__icon
+        display: flex
+        align-items: center
+        gap: 10px
+        p
+            color: #FFF
+            font-size: 22px
+            font-family: Work Sans
+            line-height: 160%
+    .tags__items
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 20px
+    .tags__item
+        border-radius: 20px
+        background: #3B3B3B
+        padding: 5px 30px
+        color: #FFF
+        text-align: center
+        font-size: 16px
+        font-family: Work Sans
+        font-weight: 600
+        line-height: 140%
+        text-transform: uppercase
+
+@media screen and (max-width:439px)
+    .artist
+        &__info
+            padding: 0px 30px
+            &-left
+                display: flex
+                gap: 20px
+                flex-direction: column
+                .buttonColor
+                    @include button(300px)
+                .buttonNonecolor
+                    @include button(300px)
+                    border: 2px solid #A259FF
+                    background: none
+            &-subtitle
+                p
+                    font-size: 16px
+        &__image
+            padding: 0px 30px
+            left: 25%
+        &-sort
+            padding: 0px 15px
+
+@media screen and (max-width:777px)
+    .artist
+        .fon
+            height: 280px
+        &__image
+            top: 320px
+            height: auto
+            border: none
+        &__info
+            &-title
+                flex-direction: column
+                justify-content: flex-start
+            &-right
+                h2
+                    font-size: 38px
+            &-left
+                margin-bottom: 30px

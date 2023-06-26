@@ -1574,6 +1574,250 @@
     margin-bottom: 30px;
   }
 }
+.nfts {
+  padding: 0px 0px 80px;
+}
+.nfts .fon {
+  background-image: url("../img/home/nft.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+.nfts__info {
+  margin: 80px 0px 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.nfts__info-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-direction: column;
+}
+.nfts__info-left p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #fff;
+  width: 605px;
+}
+.nfts__info-left div {
+  color: #858584;
+  font-size: 22px;
+  font-family: Space Mono;
+  font-weight: 700;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+.nfts__info-title h2 {
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.nfts__info-title p {
+  color: #858584;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 140%;
+  text-transform: capitalize;
+  font-family: Work Sans;
+}
+.nfts__info-right {
+  background: rgba(59, 59, 59, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding: 30px;
+}
+.nfts__info-right button {
+  width: 235px;
+  height: 60px;
+  background: #A259FF;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+}
+.nfts__info-right button:hover {
+  transform: scale(0.95);
+}
+.nfts__info-right button img {
+  width: 20px;
+}
+.nfts__info-right .right-subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+.nfts__info-right .icons {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-top: 6px;
+}
+.nfts__info-right .right-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  text-align: center;
+  gap: 10px;
+}
+.nfts__info-right .right-title p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+.nfts__info-right .right-title span {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #FFFFFF;
+}
+.nfts__info-timer {
+  display: none;
+}
+.nfts__icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nfts__icon p {
+  color: #FFF;
+  font-size: 22px;
+  font-family: Work Sans;
+  line-height: 160%;
+}
+.nfts .tags__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.nfts .tags__item {
+  border-radius: 20px;
+  background: #3B3B3B;
+  padding: 5px 30px;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-family: Work Sans;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 439px) {
+  .artist__info {
+    padding: 0px 30px;
+  }
+  .artist__info-left {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .artist__info-left .buttonColor {
+    width: 300px;
+    height: 60px;
+    background: #A259FF;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+  }
+  .artist__info-left .buttonColor:hover {
+    transform: scale(0.95);
+  }
+  .artist__info-left .buttonColor img {
+    width: 20px;
+  }
+  .artist__info-left .buttonNonecolor {
+    width: 300px;
+    height: 60px;
+    background: #A259FF;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    border: 2px solid #A259FF;
+    background: none;
+  }
+  .artist__info-left .buttonNonecolor:hover {
+    transform: scale(0.95);
+  }
+  .artist__info-left .buttonNonecolor img {
+    width: 20px;
+  }
+  .artist__info-subtitle p {
+    font-size: 16px;
+  }
+  .artist__image {
+    padding: 0px 30px;
+    left: 25%;
+  }
+  .artist-sort {
+    padding: 0px 15px;
+  }
+}
+@media screen and (max-width: 777px) {
+  .artist .fon {
+    height: 280px;
+  }
+  .artist__image {
+    top: 320px;
+    height: auto;
+    border: none;
+  }
+  .artist__info-title {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .artist__info-right h2 {
+    font-size: 38px;
+  }
+  .artist__info-left {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (max-width: 1185px) {
   .nft-item {
     display: flex;
@@ -1690,9 +1934,9 @@
     width: 24px;
     height: 24px;
   }
-  .trending__item span {
+  .trending__item-title span {
     border-radius: 20px;
-    padding: 32.2px 15px;
+    padding: 0;
     font-size: 16px;
   }
   .footer__items {
